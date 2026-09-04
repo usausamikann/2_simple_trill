@@ -80,8 +80,18 @@ body{
     z-index: 2;
 }
 
+.result{ /*リザルト画面でscoreに付加するクラス*/
+    top: 40%;
+    font-size: 48px;
+    z-index: 3;
+}
+
 #retry {
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 48px;
     padding: 10px 20px; /*文字の周囲の空白*/
-    margin-top: 20px; /*上のオブジェクト、この場合スコアとの距離*/
+    z-index: 3;
 }

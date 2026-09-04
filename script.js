@@ -36,11 +36,12 @@ function startGame(){ //ゲーム開始
 function endGame(){ //ゲーム終了
     finished=true;
     //オブジェクト非表示
-    leftButton.display="none";
-    rightButton.display="none";
-    timerText.display="none";
+    leftButton.style.display="none";
+    rightButton.style.display="none";
+    timerText.style.display="none";
     //リザルト表示
     const bpm=3*score;
+    scoreText.classList.add("result"); //クラスresultを付加して表示位置変更
     scoreText.textContent
     =`あなたのトリルは……BPM ${bpm} の16分相当！`;
     retry.style.display="block";
