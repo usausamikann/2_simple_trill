@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    height: 100vh; /*100vh:bodyの高さ=画面全体の高さ*/
+
+    /*画面を中央揃えに*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 32px;
+}
+
+#buttons{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    font-size: 72px;
+}
+
+#retry {
+    font-size: 48px;
+    padding: 10px 20px; /*文字の周囲の空白*/
+    margin-top: 20px; /*上のオブジェクト、この場合スコアとの距離*/
+}

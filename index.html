@@ -11,9 +11,13 @@
 
 <body>
     <p id="timer">Time : 15</p>
-    <div id="button">
-        <botton id="left-botton">F</botton>
-        <botton id="right-botton">J</botton>
+    <div id="buttons">
+        <button id="left-button" class="hit-area"><!--hit-area:実際の判定範囲-->
+            <span class="button-mark">F</span><!--button-mark:表示されているボタン-->
+        </button>
+        <button id="right-button" class="hit-area">
+            <span class="button-mark">J</span>
+        </button>
     </div>
     <p id="score">Score: 0</p>
     <button id="retry" style="display: none;">Retry</button><!--リトライボタン-->
