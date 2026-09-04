@@ -17,13 +17,14 @@ body{
     position :fixed;
     inset: 0; /*画面全体にぴったり一致*/
     display: flex; /*ボタンを左右に並べる と同時に、子をflexboxで並べられるようになる*/
-    width: 100vh;
+    width: 100vw;
     height: 100dvh;
+    z-index: 1; /*描画の順, indexが小さいほど奥に描画*/
 }
 
 .hit-area{ /*各ボタンの判定領域なので画面の50%*/
     width: 50%; /*クラスなので親の領域に対しての割合をデカさの数値として持つ*/
-    height: 50%;
+    height: 100%;
     padding: 0; /*ボタンの余白を消去*/
     border : none; /*ボタン枠線を透明に*/
     background: transparent; /*ボタンの色も透明に*/
@@ -58,6 +59,25 @@ body{
 
 #right-button .button-mark{ /*右ボタンの見た目*/
     border-radius: 0 100px 100px 0; /*順番は LU,RU,RD,LD*/
+}
+
+/*ボタン以外の要素の配置*/
+#timer{
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%); /*文字がずれるから、文頭を自分の幅の50%左に戻す*/
+    pointer-events: none;
+    z-index: 2;
+}
+
+#score{
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%); /*文字がずれるから、文頭を自分の幅の50%左に戻す*/
+    pointer-events: none;
+    z-index: 2;
 }
 
 #retry {
