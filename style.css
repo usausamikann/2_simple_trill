@@ -94,14 +94,14 @@ body{
 }
 
 #score.result{ /*リザルト画面でscoreに付加するクラス*/
-    top: 40%;
+    top: 10%;
     font-size: 48px;
     z-index: 3;
 }
 
 #retry {
     position: fixed;
-    top: 55%;
+    bottom: 20%;
     left: 50%;
     transform: translateX(-50%);
     font-size: 48px;
