@@ -40,7 +40,7 @@ function endGame(){ //ゲーム終了
     rightButton.display="none";
     timerText.display="none";
     //リザルト表示
-    let bpm=3*score;
+    const bpm=3*score;
     scoreText.textContent
     =`あなたのトリルは……BPM ${bpm} の16分相当！`;
     retry.style.display="block";
