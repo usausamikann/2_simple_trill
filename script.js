@@ -46,3 +46,26 @@ function endGame(){ //ゲーム終了
     =`あなたのトリルは……BPM ${bpm} の16分相当！`;
     retry.style.display="block";
 }
+
+//入力受付
+
+//PC入力
+document.addEventListener("keydown", (event) => {
+    if (event.repeat) return; //押しっぱなしを無視
+    if (event.code === "KeyF" || event.code === "KeyJ") {
+        press();
+    }
+});
+
+//スマホ入力
+leftButton.addEventListener("pointerdown", () => {
+    press();
+});
+rightButton.addEventListener("pointerdown", () => {
+    press();
+});
+
+//リトライ
+retry.addEventListener("click", () => {
+    location.reload();
+});
