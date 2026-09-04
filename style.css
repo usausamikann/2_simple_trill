@@ -53,6 +53,19 @@ body{
     pointer-events: none; /*spanではなく親のhit-areaで入力を判定*/
 }
 
+.touch-mark {
+    display: none;
+}
+
+@media (pointer: coarse){ /*端末によって表示を変える*/
+    .pc-mark {
+        display: none;
+    }
+    .touch-mark {
+        display: inline;
+    }
+}
+
 #left-button .button-mark{ /*左ボタンの見た目*/
     border-radius: 100px 0 0 100px; /*順番は LU,RU,RD,LD*/
 }
