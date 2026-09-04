@@ -93,7 +93,7 @@ body{
     z-index: 2;
 }
 
-.result{ /*リザルト画面でscoreに付加するクラス*/
+#score.result{ /*リザルト画面でscoreに付加するクラス*/
     top: 40%;
     font-size: 48px;
     z-index: 3;
